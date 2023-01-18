@@ -149,9 +149,9 @@ a {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.5);
     position: absolute;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
-.header__content-btn:hover{
+.header__content-btn:hover {
     background-color: #fff;
     color: #001e64;
 }
@@ -213,7 +213,8 @@ a {
     justify-content: space-between;
 }
 .product__content-img {
-    object-fit: cover;
+    object-fit: content;
+    /* might be object-fit: cover; */
 }
 .product__content-list {
     width: 291px;
@@ -243,7 +244,7 @@ a {
     margin-bottom: 25px;
 }
 .product__content-btn {
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -254,11 +255,39 @@ a {
     text-transform: uppercase;
     background-color: transparent;
     padding: 12px 85px;
+    margin-bottom: 20px;
     cursor: pointer;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
-.product__content-btn:hover{
-    background: #001E64;
-    color: #FFFFFF;
+.product__content-btn:hover {
+    background: #001e64;
+    color: #ffffff;
 }
-
+.seafood {
+    background-image: url(../images/seafood-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 290px 0 95px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.seafood__items {
+    display: flex;
+    justify-content: space-around;
+}
+.seafood__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+    min-height: 165px;
+    background-image: url(../images/shell.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
