@@ -299,8 +299,6 @@ a {
     justify-content: space-between;
     margin-bottom: 50px;
 }
-.seafood__item-content {
-}
 .seafood__item-title {
     font-family: "Roboto Slab", serif;
     font-weight: 400;
@@ -363,7 +361,11 @@ a {
 .contacts__box-item span {
     display: block;
 }
-.footer{
+.contacts__box-item a:hover {
+    text-decoration: underline;
+    color: #001e64;
+}
+.footer {
     padding: 30px 0 110px;
 }
 .footer__inner {
@@ -375,12 +377,13 @@ a {
 .footer__inner .menu {
     padding-bottom: 33px;
 }
-.footer__socials{
+.footer__socials {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
 }
-.footer__socials-link{
+.footer__socials-link path {
+    transition: all 0.2s ease;
 }
 .footer__socials-item + .footer__socials-item {
     margin-left: 10px;
@@ -388,5 +391,3 @@ a {
 .footer__socials-link:hover path {
     fill: #001e64;
 }
-
-
