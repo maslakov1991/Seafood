@@ -336,15 +336,57 @@ a {
 .contacts {
     background-image: url(../images/contacts-img.png);
     background-repeat: no-repeat;
-    
-}
-.container {
+    background-position: bottom left;
 }
 .contacts__box {
+    margin-left: auto;
+    width: 390px;
+    background-color: #ffffff;
+    padding: 33px 0 33px 20px;
 }
 .contacts__box-text {
+    width: 195px;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001e64;
+    margin-bottom: 30px;
 }
 .contacts__box-list {
+    font-size: 18px;
+    line-height: 21px;
 }
 .contacts__box-item {
+    margin-top: 30px;
 }
+.contacts__box-item span {
+    display: block;
+}
+.footer{
+    padding: 30px 0 110px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 45px 0 23px;
+}
+.footer__inner .menu {
+    padding-bottom: 33px;
+}
+.footer__socials{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer__socials-link{
+}
+.footer__socials-item + .footer__socials-item {
+    margin-left: 10px;
+}
+.footer__socials-link:hover path {
+    fill: #001e64;
+}
+
+
